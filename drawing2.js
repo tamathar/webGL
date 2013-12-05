@@ -79,7 +79,7 @@ var vertShaderSrc =
 	
 	//calc the angle of incidence, alter the diffuse color with it, and add the amblight to that
 	"highp float aOfIncidence = max(dot(transformedNormal,dirLightVector),0.0);"+
-	"lighting = (1.5*abs(gl_Position.xyz))/10.0;"+///gl_Position.w;" +//ambLight + (dirDiffuseColor * aOfIncidence);"+
+	"lighting = (1.5*abs(vec3(gl_Position.xy,gl_Position.z-5.0)))/20.0 + (dirDiffuseColor * aOfIncidence);"+
 "}";
 
 var fragShaderSrc = 
