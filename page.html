@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>test for webgl (has canvas)</title>
+		<script src="gl-matrix.js"></script>
+		<script src="drawing2.js"></script>
+	</head>
+	<body onload="webGLEntry('webglCanvas')" style="background-color:black;">
+		<header><big style="color:white;">Hint: you can also click and drag!</big></header>
+		<hr/>
+			<canvas id="webglCanvas" width="1400" height="700" style="border:1px solid #000000;"></canvas>
+		<hr/><br/>
+		<button onclick="rotateCCwise(10)">CCwise</button>
+		<button onclick="rotateUp(10)">Up</button>
+		<button onclick="rotateCwise(10)">Cwise</button><br/>
+		&nbsp;&nbsp;<button onclick="rotateLeft(10)">Left</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button onclick="rotateRight(10)">Right</button><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="rotateDown(10)">Down</button>
+		<br/><br/>
+		<button onclick="rotateCamera(10,[0,1,0])">camera</button>
+		<footer><small style="color:white;">Disclaimer: The Neverwinter Eye is not mine. I simply pulled a random png file to use as a texture.</small></footer>
+	</body>
+</htm>
